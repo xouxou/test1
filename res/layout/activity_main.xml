@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="course.project.moma.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        tools:context="course.project.moma.MainActivity" >
+
+        <TextView 
+            android:id="@+id/edit_message1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.333"
+            android:background="#00BFFF"
+            android:text="@string/edit_message1" />
+
+        <TextView 
+            android:id="@+id/edit_message2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_message2"
+            android:layout_weight="0.333" />
+        
+
+        <TextView 
+            android:id="@+id/edit_message3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_message3"
+            android:layout_weight="0.333" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        tools:context="course.project.moma.MainActivity" >
+
+        <TextView
+            android:id="@+id/edit_message4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#00BFFF"
+            android:text="@string/edit_message4"
+            android:layout_weight="0.5" />
+         <TextView
+            android:id="@+id/edit_message5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#00BFFF"
+            android:text="@string/edit_message5"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+</LinearLayout>
