@@ -2,61 +2,86 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:background="#000000"
+    android:orientation="vertical"
     tools:context="course.project.moma.MainActivity" >
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="0.5"
-        android:orientation="vertical"
-        tools:context="course.project.moma.MainActivity" >
-
-        <TextView 
-            android:id="@+id/edit_message1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.333"
-            android:background="#00BFFF"
-            android:text="@string/edit_message1" />
-
-        <TextView 
-            android:id="@+id/edit_message2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/edit_message2"
-            android:layout_weight="0.333" />
-        
-
-        <TextView 
-            android:id="@+id/edit_message3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/edit_message3"
-            android:layout_weight="0.333" />
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="0.90"
+	        android:orientation="horizontal"
+	        android:baselineAligned="false"
+	        tools:context="course.project.moma.MainActivity"
+	>
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="0.5"
+	        android:orientation="vertical"
+	        tools:context="course.project.moma.MainActivity"
+	        android:layout_marginTop="2dp"
+	        android:layout_marginStart="2dp"
+	        android:layout_marginBottom="2dp" >
+	
+	        <TextView 
+	            android:id="@+id/textview1"
+	            android:layout_width="match_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="0.333"
+	            android:background="#A0BFFF"
+	            android:layout_margin="2dp"/>
+	
+	        <TextView 
+	            android:id="@+id/textview2"
+	            android:layout_width="match_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="0.333"
+	            android:layout_margin="2dp"
+	            android:background="#FFFFFF"
+	             />
+	        
+	
+	        <TextView 
+	            android:id="@+id/textview3"
+	            android:layout_width="match_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="0.333"
+	            android:background="#ABBFFF"
+	            android:layout_margin="2dp" />
+	    </LinearLayout>
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="0.5"
+	        android:orientation="vertical"
+	        tools:context="course.project.moma.MainActivity"
+	        android:layout_marginTop="2dp"
+	        android:layout_marginEnd="2dp"
+	        android:layout_marginBottom="2dp" >
+	
+	        <TextView
+	            android:id="@+id/textview4"
+	            android:layout_width="match_parent"
+	            android:layout_height="0dp"
+	            android:background="#00BFFF"
+	            android:layout_weight="0.5"
+	            android:layout_margin="2dp" />
+	         <TextView
+	            android:id="@+id/textview5"
+	            android:layout_width="match_parent"
+	            android:layout_height="0dp"
+	            android:background="#ABCFFF"
+	            android:layout_weight="0.5"
+	            android:layout_margin="2dp" />
+	    </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
+    <SeekBar
+        android:id="@+id/seekBar1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="0.5"
-        android:orientation="vertical"
-        tools:context="course.project.moma.MainActivity" >
-
-        <TextView
-            android:id="@+id/edit_message4"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:background="#00BFFF"
-            android:text="@string/edit_message4"
-            android:layout_weight="0.5" />
-         <TextView
-            android:id="@+id/edit_message5"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:background="#00BFFF"
-            android:text="@string/edit_message5"
-            android:layout_weight="0.5" />
-    </LinearLayout>
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:gravity="center|center_vertical" />
 
 </LinearLayout>
